@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    line-height: 1.5;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #24262b;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.4s linear;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 25px;
+    padding: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav a:hover,
+footer a:hover {
+    color:lightskyblue;
+}
+
+hr {
+    width: 80%;
+    margin-left: 180px;
+}
+
+/********************** Header *********************/
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 100px;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    background: none;
+    z-index: 100;
+}
+
+
+.navbar {
+    color: white;
+}
+
+.navbar-icon {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background-color: darkgray;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-icon span {
+    width: 35px;
+    height: 5px;
+    background-color: #474242;
+    pointer-events: none;
+}
+
+/*********************** Home Page ***********************/
+
+.backgroundimage {
+    background-image: url("./Images/1373421.jpg");
+    width: 100%;
+    height: 40%;
+    background-size: cover;
+}
+
+.img123 {
+    width: 100%;
+    height: 400px;
+    float: right;
+}
+
+#img123blur {
+    opacity: 80%;
+}
+
+
+/******************** Sectiunea Servicii (HomePage) ***********/
+.services-section {
+    padding: 15px;
+}
+
+.services-section h2:first-child {
+    text-align: center;
+    margin-bottom: 20px;
+    color: lightgray;
+}
+
+.servicii {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.servicii-container {
+    width: 25%;
+    text-align: center;
+    font-size: 12px;
+    color: lightgray;
+}
+
+.containerbutton {
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 3px 15px;
+    font-size: 10px;
+    cursor: pointer;
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    color: black;
+}
+
+.descriere {
+    display: none;
+}
+
+/******************** Sectiunea Testimonials ***********/
+.testimonials-section {
+    padding: 100px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.testimonial {
+    display: none;
+    width: 600px;
+    flex-direction: row;
+    align-items: center;
+    background-color: #474242;
+    gap: 10px;
+    border-radius: 10px 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 5px #474242;
+}
+
+.testimonial img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 35%;
+}
+
+.testimonials-section button {
+    background-color: #474242;
+    padding: 0 5px;
+    color: lightsteelblue;
+    border-radius: 30%;
+    font-size: 40px;
+    border: 1px solid #474242;
+    cursor: pointer;
+}
+
+.testimonials-section button:hover {
+    background-color: lightyellow;
+}
+
+.activ {
+    display: flex;
+}
+
+/************* Pagina Rooms ************/
+
+.servicespage {
+    display: flex;
+    flex-direction: row;
+    padding-top: 80px;
+    min-height: 90vh;
+}
+
+.servicespage::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./Images/contactImg.jpg");
+    background-size: cover;
+    z-index: -1;
+    filter: blur(15px);
+}
+
+.sections {
+    width: 1100px;
+    margin: 5% auto;
+}
+
+.sections h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    color: #fff;
+}
+
+.single-service {
+    position: relative;
+    width: 300px;
+    height: 220px;
+    background: #474242;
+    box-sizing: border-box;
+    padding: 0 15px;
+    transition: .5s;
+    overflow: hidden;
+    margin: 15px 10px;
+    text-align: center;
+    float: left;
+    margin-left: 46px;
+    border-radius: 20%;
+
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    margin: 0 auto 60px auto;
+
+}
+
+.single-service p {
+    color: #fff;
+    font-size: 14px;
+
+}
+
+.single-service h3 {
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+#formular {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    background: none;
+}
+
+.formInput {
+    display: block;
+    width: 500px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #474242;
+    border-radius: 7px;
+    border: 2px solid lightgrey;
+}
+
+.appointment,
+p {
+    color: #fff;
+
+}
+
+.button {
+    color: #fff;
+    background-color: #474242;
+    box-shadow: none;
+    width: 125px;
+    padding: 8px;
+    margin-top: 8px;
+    text-align: center;
+    border-radius: 5px 15px;
+    border: 2px solid lightgrey;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #474242;
+}
+
+.column {
+    float: left;
+    width: 100%;
+    padding: 0;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 30%;
+
+}
+
+/******************* Pagina Contact *********************/
+
+.containerContact {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 150px 150px;
+}
+
+.containerContact:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 120%;
+    background-image: url("./Images/contactImg.jpg");
+    background-size: cover;
+    z-index: -1;
+    filter: blur(15px);
+
+}
+
+.contact-box {
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+}
+
+.left {
+    height: 100%;
+    background-image: url(./Images/pexels-isabella-mendes-1795507.jpg);
+    background-size: cover;
+}
+
+.right {
+    padding: 25px 40px;
+}
+
+h2 {
+    position: relative;
+    padding-bottom: -20px;
+    margin-bottom: 0px;
+}
+
+
+.field {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgba(230, 230, 230, 0.6);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+}
+
+.field:hover {
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
+.buttonContact {
+    color: black;
+    background-color: lightgrey;
+    box-shadow: none;
+    width: 85px;
+    padding: 5px;
+    margin-top: 5px;
+    text-align: center;
+    border: 2px solid lightgrey;
+    cursor: pointer;
+}
+
+.buttonContact:hover {
+    background-color: lightgreen;
+}
+
+
+/************************ Footer ***********************/
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 18px;
+    padding-bottom: 25px;
+}
+
+ul {
+    list-style: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 5px;
+    justify-content: space-evenly;
+}
+
+.footer-col h4 {
+    font-size: 14px;
+    color: lightgrey;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: red;
+    height: 2px;
+    box-sizing: border-box;
+    width: 45px;
+}
+
+.footer-col ul li {
+
+    margin-bottom: 17px;
+}
+
+.footer-col ul li a {
+    font-size: 11px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: lightgrey;
+    display: block;
+
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 10px;
+
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(255, 255, 255, 0.2);
+    margin: -18px -2px -9px 7px;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.2s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+.autor {
+    color: black;
+    font-size: 12px;
+    margin-top: -10px;
+    text-align: center;
+}
+
+/********************* Responsiveness *********************/
+
+
+/**** navBarResponsiveness ***/
+@media screen and (max-width: 950px) {
+    header {
+        padding: 30px;
+    }
+
+    .navbar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: none;
+        flex-direction: column;
+        transform: translate(0, 100%);
+        width: 100%;
+        background-color: #24262b;
+        gap: 10px;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    .navbar-icon {
+        display: flex;
+    }
+}
+
+/************ Pagina Contact responsiveness    *************/
+
+@media screen and (max-width: 950px) {
+    .containerContact {
+        width: 100%;
+        height: 100%;
+    }
+
+    .contact-box {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/******* Pagina rooms responsiveness *******/
+
+@media (max-width:950px) {
+    .sections {
+        width: 100%;
+    }
+
+    .single-service {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .sections h2 {
+        font-size: 30px;
+    }
+}
